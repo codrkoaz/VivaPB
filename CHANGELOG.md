@@ -1,7 +1,13 @@
 # VivaPB Changelog
 
+## [Fixes Version] - 2024-01-19
+
+- Fixed the png icon image error
+- Changed the command view to no-view
+- Moved screenshots to metadata folder
 
 
+<<<<<<< HEAD
 ## [Fixes Version] - 2024-01-30
   
   - Fixed code to show if Vivaldi is installed on Raycast
@@ -21,3 +27,6 @@
 
 - Initial version code
 - add screenshots
+=======
+- Initial version code
+>>>>>>> contributions/merge-1706592113166256000
