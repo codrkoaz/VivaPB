@@ -11,7 +11,6 @@ async function openVivaldiIncognito(): Promise<void> {
     await exec(' open -na "Vivaldi" --args -incognito "https://www.duckduckgo.com"');
   } catch (error) {
     console.error(`Error: Not working`);
-
     showOpenVivaldiErrorToast();
   }
 }
@@ -34,7 +33,7 @@ function showOpenVivaldiErrorToast(): void {
   showToast(options);
 }
 
-export async function openVivaldiIncognitoIfInstalled(): Promise<void> {
+export default async function openVivaldiIncognitoIfInstalled(): Promise<void> {
   const vivaldiInstalled = await isVivaldiInstalled();
   if (vivaldiInstalled) {
     await openVivaldiIncognito();
@@ -42,5 +41,4 @@ export async function openVivaldiIncognitoIfInstalled(): Promise<void> {
     showVivaldiNotInstalledErrorToast();
   }
 }
-
 openVivaldiIncognitoIfInstalled();
