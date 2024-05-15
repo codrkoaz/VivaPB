@@ -18,7 +18,7 @@
       "name": "vivapb",
       "title": "VivaPB",
       "description": "Browse the web in privacy with the Vivaldi Browser.",
-      "mode": "view"
+      "mode": "no-view"
     }
   ],
   "dependencies": {
